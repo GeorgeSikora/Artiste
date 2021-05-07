@@ -38,11 +38,18 @@ void setup() {
     drawCross((int)random(MIN_X, MAX_X-size), (int)random(MIN_Y, MAX_Y-size), size, size, 100); 
   }
   */
-
   actions.add(new Action(new MoveMouse(displayWidth/2, displayHeight/2), 1000));
   actions.add(new Action(new MouseClick()));
+  
+    //pickRandomColor();
+  drawText("bac", 767, 280);
+    //pickRandomColor();
+  drawText("cba", 767 +10, 280+10);
+    //pickRandomColor();
+  drawText("acb", 767 +10 +10, 280+10+10);
 
-  final int N = 3;
+
+  final int N = 0;
 
   for (int i = 0; i < N; i++) {
 
